@@ -10,8 +10,9 @@ class Wardrobe extends Component {
       { type: "accessory", color: "sapphire", size: "" },
       { type: "accessory", color: "lilac", size: "" },
     ]
-
-    return {/* your code here */ }
+    let mappedWardrobe = wardrobe.map (w=><Article color={w.color} type={w.type} key={w.color + w.type + w.size}/>)
+    // return FunctionalComponent data={someData} />
+    return mappedWardrobe
 
   }
 }
